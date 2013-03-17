@@ -158,6 +158,6 @@ public class VarastoTest {
     public void lisaaTyhjaanVarastoonKolmeJaOtaViisiJaSaldoOnNolla() {
         varasto.lisaaVarastoon(3);
         varasto.otaVarastosta(5);
-        assertEquals(1, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
 }
